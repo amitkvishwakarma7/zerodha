@@ -1,0 +1,40 @@
+package collection;
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+import org.apache.commons.collections4.bag.SynchronizedSortedBag;
+
+public class LinkedHashSet_IC {
+
+	public static void main(String[] args) {
+		
+		LinkedHashSet link = new LinkedHashSet();
+	
+		System.out.println(link.isEmpty());
+		System.out.println(link.size());
+		link.add("aaa");
+		link.add(50);
+		link.add("xyz");
+		System.out.println("aaa");//duplicate removd
+		link.add(null);
+		
+		System.out.println(link);
+		System.out.println(link.isEmpty());
+		System.out.println(link.size());
+		link.add(550);
+		System.out.println(link);
+		link.remove(null);
+		System.out.println(link.contains("aaa"));
+		System.out.println(link);
+
+		Iterator v = link.iterator();
+		while(v.hasNext()) {
+		System.out.println(v.next());
+		
+		}
+		
+		
+		
+	}
+}
