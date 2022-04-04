@@ -1,0 +1,17 @@
+package assertion;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class HardAssert1 {
+	
+	@Test
+	public void t1() {
+		String s = "Java";
+		String s2 = "Java";
+		Assert.assertNotEquals(s, s2);
+		
+		
+	}
+
+}
